@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to Transia</h1>
+    <p>Create and translate languages with ease!</p>
+  </header>
+  <main>
+    <section id="language-creator">
+      <h2>Create a Language</h2>
+      <form id="languageForm">
+        <label for="languageName">Language Name:</label>
+        <input type="text" id="languageName" placeholder="Enter language name" required>
+
+        <label for="translationMode">Translation Mode:</label>
+        <select id="translationMode">
+          <option value="fast">Fast Mode</option>
+          <option value="advanced">Advanced Mode</option>
+        </select>
+
+        <button type="submit">Add Language</button>
+      </form>
+    </section>
+
+    <section id="library">
+      <h2>Your Library</h2>
+      <ul id="languageList">
+        <!-- Saved languages will appear here -->
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>© 2024 Transia</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
